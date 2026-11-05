@@ -84,18 +84,18 @@ A opção **27** abre um submenu dedicado, com ferramentas para liberar memória
 
 ### Execução rápida pelo CMD ou PowerShell
 
-Abra o **Prompt de Comando (CMD)** ou o **PowerShell** como administrador. Cole a linha abaixo e pressione **Enter**. O comando usa `curl.exe` para baixar o painel na pasta temporária e só o inicia se o download for concluído com sucesso.
+Abra o **Prompt de Comando (CMD)** ou o **PowerShell** como administrador. Cole a linha abaixo e pressione **Enter**. O comando usa `curl.exe` para baixar o painel na pasta de dados locais do usuário (`%LOCALAPPDATA%`) e só o inicia se o download for concluído com sucesso.
 
 ```bat
-cmd /d /c "cd /d %TEMP% && curl.exe -fLo Help_Desk.bat https://tinyurl.com/suportetiii && .\Help_Desk.bat"
+cmd /d /c "cd /d %LOCALAPPDATA% && curl.exe -fLo Help_Desk.bat https://tinyurl.com/suportetiii && .\Help_Desk.bat"
 ```
 
-Na tela de cores, pressione **Enter** para usar a cor padrão. Depois, digite o número da opção desejada. Ao executar pelo link, o painel grava o histórico em `%TEMP%\painel_log.txt`.
+Na tela de cores, pressione **Enter** para usar a cor padrão. Depois, digite o número da opção desejada. Ao executar pelo link, o painel grava o histórico em `%LOCALAPPDATA%\painel_log.txt`.
 
 ### Download manual
 
 1. Abra o [Help_Desk.bat](./Help_Desk.bat) no repositório, revise o conteúdo e baixe o arquivo.
-2. Clique nele com o botão direito e escolha **Executar como administrador**.
+2. Salve o arquivo em uma pasta fora de `%TEMP%`, como Downloads. Clique nele com o botão direito e escolha **Executar como administrador**.
 3. Pressione **Enter** na tela de cores e escolha uma opção do menu.
 
 ## ⚙️ Configuração
