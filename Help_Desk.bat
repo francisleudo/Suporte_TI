@@ -3,7 +3,7 @@ chcp 65001 >nul
 setlocal EnableExtensions EnableDelayedExpansion
 :: ==================================================
 :: PAINEL DE SUPORTE TECNICO - COMPLETO
-:: Criado por Felipe Wehmuth - 2026
+:: Painel criado por Felipe Wehmuth. Fork mantido por Francis Silva. - 2026
 :: ==================================================
 title Painel de Suporte Tecnico
 mode con: cols=95 lines=60
@@ -13,7 +13,7 @@ mode con: cols=95 lines=60
 :: =====================================
 set "VERSAO=1.3.0-seguro"
 set "URL_CHAMADO=https://suporte.exemplo.com"
-set "GITHUB_REPO=https://github.com/felipewehcode/painel_de_suporte"
+set "GITHUB_REPO=https://github.com/francisleudo/Suporte_TI"
 set "LOG_FILE=%~dp0painel_log.txt"
 
 :: =====================================
@@ -77,7 +77,7 @@ echo   ░    ░ ░░░░░ ░░░░░ ░        ░  ░░░░  
 echo.
 echo.
 echo ===================================================================
-echo                    CRIADO POR FELIPE WEHMUTH
+echo  criado por Felipe Wehmuth. Fork mantido por Francis Silva. - 2026
 echo                   FERRAMENTA PARA USO DO TECNICO
 echo                UTILIZE A FERRAMENTA COMO ADMINISTRADOR
 echo ===================================================================
